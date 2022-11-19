@@ -1,0 +1,32 @@
+.parent {
+  height: 400px;
+  width: 400px;
+  background-color: greenyellow;
+}
+.child {
+  height: 50%;
+  width: 50%;
+  background-color: blue;
+  animation: fromto 1s ease-in forwards infinite alternate;
+}
+
+.parent:hover .child{
+    animation-play-state: paused;
+}
+@keyframes fromto{
+    0%{
+        transform: translateX(0%);
+    }
+    33%{
+        transform: translateY(100%);
+    }
+    70%{
+        transform: translate(100%,100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+
+
